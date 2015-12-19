@@ -1,6 +1,14 @@
 body {
     font-family: 'Source Sans Pro', sans-serif;
-    padding-top: 70px;
+}
+
+a {
+    color: #333333;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #8b0000;
 }
 
 .logo {
@@ -29,3 +37,15 @@ body {
     background-image: none;
     box-shadow: none;
     background-color: #ffffff;
+}
+
+.index-nav {
+    margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+    .index-nav {margin-top: 10px}
+}
+    
+    
+    
