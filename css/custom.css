@@ -1,13 +1,28 @@
 body {
     font-family: 'Source Sans Pro', sans-serif;
+    margin-top: 70px;
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #333333;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+    text-decoration: none;
+    color: #8b0000;
 }
 
 a {
     color: #333333;
+    letter-spacing: 2px;
 }
 
 a:hover {
     text-decoration: none;
+    color: #8b0000;
+}
+
+.active {
     color: #8b0000;
 }
 
@@ -41,11 +56,17 @@ a:hover {
 
 .index-nav {
     margin-top: 20px;
+    letter-spacing: 2px;
 }
 
 @media (min-width: 768px) {
-    .index-nav {margin-top: 10px}
+    .index-nav {margin-top: 200px}
 }
+
+.index-link {
+
+}
+
     
     
     
