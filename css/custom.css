@@ -67,6 +67,17 @@ a:hover {
 
 }
 
+.bg-gray {
+  background-color: gray;
+}
+
+@media(min-width:768px) {
+  .section {
+    margin: 0 auto;
+    width: 1080px;
+  }
+}
+
     
     
     
