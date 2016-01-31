@@ -3,6 +3,43 @@ body {
     margin-top: 70px;
 }
 
+/* /////////////////////////
+  HEADERS
+\\\\\\\\\\\\\\\\\\\\\\\\\*/
+
+h1, .h1 {
+  font-size: 38px;
+  margin-bottom: 26px;
+}
+
+h2, .h2 {
+  font-size: 24px;
+  border-top: 1px solid lightgray;
+  border-right: 1px solid lightgray;
+    
+}
+
+h3, .h3 {
+  font-size: 18px;
+  
+}
+
+h4, .h4 {
+  font-size: 14px;
+  margin-bottom: 48px;
+}
+
+p, .p {
+
+}
+
+/* ///////////////////////*/
+
+
+/*/////////////////////////
+NAVBAR & LINKS
+////////////////////////*/
+
 .navbar-default .navbar-nav>li>a {
     color: #333333;
 }
@@ -46,6 +83,7 @@ a:hover {
     background-image: none;
     box-shadow: none;
     border: none;
+    opacity: .98;
 }
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.open>a {
@@ -68,16 +106,52 @@ a:hover {
 }
 
 .bg-gray {
-  background-color: gray;
+  background-color: #f5f5f5;
 }
 
-@media(min-width:768px) {
+@media (min-width: 768px) {
   .section {
     margin: 0 auto;
-    width: 1080px;
+    width: 960px;
+    padding-top: 100px;
   }
 }
 
+/* /////////////////////////
+  backgrounds
+\\\\\\\\\\\\\\\\\\\\\\\\\*/
+.bg-intro {
+  background-image: url('../img/ext/city.jpg');
+  background-position-y: 70%; 
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
+  
+}
     
-    
-    
+
+.intro-quote {
+  margin-top: 250px;
+  margin-bottom: 250px;
+  color: white;
+}
+
+/*////////////////////////////
+IMAGES
+///////////////////////////*/
+
+img {
+  
+}
+
+.well {
+  background-image: none;
+  background-color: #fff;
+  border: none;
+  box-shadow: none;
+}
+
+legend {
+  border: none;
+}
