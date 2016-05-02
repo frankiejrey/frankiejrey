@@ -11,20 +11,50 @@ body {
 }
 
 .module img {
+  float: left;
   width: 100%;
   padding: 5px;
+  border: 1px solid #eef1f1;
+  box-shadow: 1px 1px 15px #f7f8f8;
 }
 
 @media(min-width:700px) {
   .module img {
-    float: left;
-    width: 50%;
+    width: 350px;
+/*    height: 375px;*/
     padding: 5px;
   }
 }
 
+@media(min-width:990px) {
+  .module img {
+    width: 340px;
+/*    height: 375px;*/
+    padding: 5px;
+  }
+}
+
+@media(min-width:1200px) {
+  .module img {
+    width: 415px;
+/*    height: 375px;*/
+    padding: 5px;
+  }
+}
+
+.module img:first-child {
+  margin-right: .5em;
+  margin-bottom: .5em;
+}
+
+@media(min-width:768px) {
+  .module .img-s{
+    width: 290px;
+  }
+}
+
 a .module:hover {
-  background-color: #eef1f1;
+/*  background-color: #f7f8f8;*/
 }
 
 .module h3 {
@@ -104,6 +134,10 @@ ul {
   list-style-type: none;
 }
 
+.all-caps {
+  text-transform: uppercase;
+}
+
 .sidenav {
   
 }
@@ -126,8 +160,8 @@ ul {
 }
 
 .sidenav ul li:hover {
-  background-color: #eef1f1;
-  text-decoration: none;
+/*  background-color: #eef1f1;*/
+  text-decoration: underline;
 }
 
 .sidenav ul a li{
@@ -141,16 +175,16 @@ ul {
 .sidenav-home {
   position: fixed;
   top: 70px;
-  width: 350px;
-  margin-left: 630px;
+  width: 225px;
+  margin-left: 715px;
 }
 
 @media(min-width:1200px){
   .sidenav-home {
   position: fixed;
   top: 70px;
-  width: 350px;
-  margin-left: 780px;
+  width: 250px;
+  margin-left: 875px;
   }
 }
 
@@ -179,6 +213,14 @@ ul {
 h4 .small {
   color: #ab0520;
 }
+.resume h4 {
+  margin-top: 1.5em;
+  margin-bottom: .5em;
+}
+
+.resume p {
+  margin-bottom: .1em;
+}
 
 /* ///////////////////////*/
 
@@ -193,7 +235,6 @@ NAVBAR & LINKS
 }
 
 .navbar-default .navbar-brand:hover {
-  background-color: #eef1f1;
   color: #333333;
 }
 
@@ -214,15 +255,18 @@ NAVBAR & LINKS
 
 .navbar-default .navbar-nav>li>a:hover {
 /*    text-decoration: underline;*/
-  background-color: #eef1f1;
+/*  background-color: #eef1f1;*/
+  border-bottom: 1px solid #333333;
+
 }
 
 .nav>li>a {
     letter-spacing: 2px;  
 }
 
-h4 a, h3 a{
-  border-bottom: 1px solid gray;
+h4 a, h3 a:hover{
+/*  border-bottom: 1px solid gray;*/
+  cursor: default;
 }
 
 a img:hover {
@@ -376,10 +420,14 @@ footer {
   padding-top: 25px;
   margin-top: 50px;
   margin-bottom: 25px;
-  font-weight: 300;
+  font-weight: 100;
   letter-spacing: 1.5px;
   bottom: 0;
-  margin: 0 auto;
+  
+}
+
+footer p {
+  font-size: 12px;
 }
 
 .social-media {
