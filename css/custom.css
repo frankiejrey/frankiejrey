@@ -283,6 +283,13 @@ NAVBAR & LINKS
   color: #333333;
 }
 
+.navbar-toggle {
+  padding: 0;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+}
+
 .navbar-default .navbar-toggle .icon-bar {
   border-radius: 0;
   background-color: #333333;
@@ -292,11 +299,12 @@ NAVBAR & LINKS
 /* REMOVED MOBILE MENU BAR BORDER */
 .navbar-default .navbar-toggle {
   border: none;
-  margin-top: 14px;
+/*  margin-top: 14px;*/
 }
 
 .navbar-default .navbar-toggle:hover {
   border-radius: 0;
+  background-color: white;
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -388,6 +396,59 @@ a img:hover {
     width: 960px;
   }
 }
+/* /////////////////////////
+  Hamburger into X
+\\\\\\\\\\\\\\\\\\\\\\\\\*/
+label {
+  height: 51px;
+}
+
+.nav-icon1 {
+  width: 60px;
+  height: 20px;
+  margin-right: 10px;
+  position: relative;
+  cursor: pointer;
+}
+
+.nav-icon1 span {
+  position: absolute;
+  height: 2px;
+  width: 20px;
+  background: #000;
+  opacity: 1;
+  left: 20px;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  -webkit-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+.nav-icon1 span:nth-child(1) {
+  top: 20px;
+}
+.nav-icon1 span:nth-child(2) {
+  top: 28px;
+}
+.nav-icon1 span:nth-child(3) {
+  top: 30px;
+}
+
+.chk {
+  display: none;
+}
+.chk:checked + .nav-icon1 span:nth-child(1) {
+  top: 23px;
+  -webkit-transform: rotate(225deg);
+          transform: rotate(225deg);
+}
+
+.chk:checked + .nav-icon1 span:nth-child(2) {
+  top: 23px;
+  -webkit-transform: rotate(-225deg);
+          transform: rotate(-225deg);
+}
+
+
 
 /* /////////////////////////
   backgrounds
